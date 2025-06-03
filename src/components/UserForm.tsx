@@ -23,41 +23,46 @@ const UserForm: React.FC = () => {
 
   return (
     <Box
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      minHeight="60vh"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        height="100vh" // altura total da tela
     >
-      <Box
+        <Box
         component="form"
         onSubmit={handleSubmit}
-        sx={{ display: 'flex', flexDirection: 'column', gap: 2, width: '100%', maxWidth: 400, alignContent: 'center' }}
-      >
+        sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 2,
+            width: '100%',
+            maxWidth: 400,
+        }}
+        >
         <TextField
-          name="nome"
-          label="Nome"
-          value={formData.nome}
-          onChange={handleChange}
-          required
-          InputLabelProps={{ sx: { color: 'primary.main' } }} // muda a cor da label
-          inputProps={{ style: { color: '#1976d2' } }} // muda a cor do texto digitado
+            name="nome"
+            label="Nome"
+            value={formData.nome}
+            onChange={handleChange}
+            required
+            InputLabelProps={{ sx: { color: 'primary.main' } }}
+            inputProps={{ style: { color: '#1976d2' } }}
         />
         <TextField
-          name="email"
-          label="Email"
-          type="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          InputLabelProps={{ sx: { color: 'primary.main' } }}
-          inputProps={{ style: { color: '#1976d2' } }}
+            name="email"
+            label="Email"
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            InputLabelProps={{ sx: { color: 'primary.main' } }}
+            inputProps={{ style: { color: '#1976d2' } }}
         />
         <Button variant="contained" type="submit">
-          Cadastrar
+            Cadastrar
         </Button>
-      </Box>
+        </Box>
     </Box>
-  );
+    );
 };
-
 export default UserForm;
