@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Container, Tabs, Tab, Typography } from '@mui/material';
 import CadastroPage from './pages/CadastroPage';
-import UsuariosPage from './pages/UsuariosPage';
+import UsuariosPage from './pages/UsuariosPage.tsx';
 
 const App: React.FC = () => {
   const [tabIndex, setTabIndex] = useState(0);
