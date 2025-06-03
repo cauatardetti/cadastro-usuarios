@@ -31,7 +31,7 @@ const UserForm: React.FC = () => {
       <Box
         component="form"
         onSubmit={handleSubmit}
-        sx={{ display: 'flex', flexDirection: 'column', gap: 2, width: '100%', maxWidth: 400 }}
+        sx={{ display: 'flex', flexDirection: 'column', gap: 2, width: '100%', maxWidth: 400, alignContent: 'center' }}
       >
         <TextField
           name="nome"
