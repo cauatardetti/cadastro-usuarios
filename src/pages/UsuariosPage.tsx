@@ -1,7 +1,7 @@
 import React from 'react';
 import UserTable from '../components/UserTable';
 
-const UsuariosPage = () => {
+const UsuariosPage: React.FC = () => {
   return <UserTable />;
 };
 
