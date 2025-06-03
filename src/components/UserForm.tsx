@@ -23,10 +23,10 @@ const UserForm: React.FC = () => {
 
   return (
     <Box
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      minHeight="60vh"
+    display="flex"
+    justifyContent="center"
+    alignItems="center"
+    mt={4} // distância controlada
     >
       <Box
         component="form"
