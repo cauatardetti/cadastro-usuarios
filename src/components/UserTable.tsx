@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
-import { getUsers, UserData } from '../utils/localStorage';
+import { getUsers } from '../utils/localStorage';
+import type { UserData } from '../utils/localStorage';
 
 const UserTable: React.FC = () => {
   const users: UserData[] = getUsers();
